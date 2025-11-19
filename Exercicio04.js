@@ -22,7 +22,6 @@ else{
 
 
 
-
 // let numero01 = parseInt(prompt("Digite o primeiro número: "))
 
 // let numero02 = parseInt(prompt("Digite o segundo número: "))

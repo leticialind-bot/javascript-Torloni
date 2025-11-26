@@ -10,47 +10,75 @@
 // // IMC de 35.0 a 39.9: Obesidade grau 2
 // // IMC maior ou igual a 40.0: Obesidade grau 3
 
-let valorPeso = Number(prompt("Digite o valor do seu peso: "))
-let valorAltura = Number(prompt("Digite a sua altura: "))
+// let valorPeso = Number(prompt("Digite o valor do seu peso: "))
+// let valorAltura = Number(prompt("Digite a sua altura: "))
 
-let soma = (valorPeso + valorAltura)
+// let soma = (valorPeso + valorAltura)
 
-console.log(soma)
+// console.log(soma)
 
-let divisao = (valorPeso / valorAltura)
+// let divisao = (valorPeso / valorAltura)
 
-console.log(divisao)
+// console.log(divisao)
 
-if(divisao <= 18.5) {
-    console.log("Abaixo do peso")
+// if(divisao <= 18.5) {
+//     console.log("Abaixo do peso")
     
-}
+// }
 
-else if (divisao >=18.5 && divisao <=24.9) {
-    console.log("Peso Normal")
+// else if (divisao >=18.5 && divisao <=24.9) {
+//     console.log("Peso Normal")
     
-}
+// }
 
-else if (divisao >=25.0 && divisao <=29.9) {
-    console.log("Sobrepeso")
+// else if (divisao >=25.0 && divisao <=29.9) {
+//     console.log("Sobrepeso")
     
-}
+// }
 
-else if (divisao >= 30.0 && divisao <=34.9) {
-    console.log("Obesidade grau 1")
+// else if (divisao >= 30.0 && divisao <=34.9) {
+//     console.log("Obesidade grau 1")
     
-}
+// }
 
-else if (divisao >= 35.0 && divisao <=39.9) {
-    console.log("Obesidade grau 2")
+// else if (divisao >= 35.0 && divisao <=39.9) {
+//     console.log("Obesidade grau 2")
     
-}
+// }
 
-else if (divisao >= 40.0) {
-    console.log("Obesidade grau 3")
+// else if (divisao >= 40.0) {
+//     console.log("Obesidade grau 3")
     
+// }
+
+
+
+// alert("Seu IMC é: " + divisao.toFixed(2) + "\nconsole: " + console);
+
+
+
+
+
+let pesoDigitado = parseFloat(prompt("Digite o seu peso em quilograma: "));
+let alturaDigitado = parseFloat(prompt("Digite o sua altura: "));
+
+let IMC = pesoDigitado / (alturaDigitado * alturaDigitado);
+
+if (IMC < 18.5) {
+    alert("Abaixo do peso")
 }
-
-
-
-alert("Seu IMC é: " + divisao.toFixed(2) + "\nconsole: " + console);
+else if(IMC >= 18.5 && IMC <= 24.9){
+    alert("Peso normal");
+}
+else if(IMC >= 25 && IMC <=29.9){
+    alert("Sobrepeso");
+}
+else if(IMC >= 30.0 && IMC <= 34.9){
+    alert("Obesidade grau 1")
+}
+else if(IMC >= 35.0 && IMC <= 39.9){
+    alert("Obesidade grau 2")
+}
+else{
+    alert("Obedesidade grau 3")
+}

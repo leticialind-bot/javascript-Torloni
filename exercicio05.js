@@ -8,3 +8,19 @@ if ( n1 < n2 && n2 < n3 ) {
 } else{
      alert(" Os números não estão em ordem crescente");
 }
+
+let primeiroNumero = parsetInt(prompt("Digite o primeiro numero"));
+let segundoNumero = parsetInt(prompt("Digite o segundo numero"));
+let terceiroNumero = parsetInt(prompt("Digite o terceiro numero"));
+
+if (primeiroNumero < segundoNumero && segundoNumero < terceiroNumero) {
+     alert("Os números estão em ordem crescente")
+}
+
+if (terceiroNumero > segundoNumero && segundoNumero > primeiroNumero){
+     alert ("Os numeros estao decrescente")
+}
+
+else{
+     alert ("os números estão em ordem aleatória.")
+}
